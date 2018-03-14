@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Todo App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form id="addTodo">
+        <i class="material-icons prefix">mode_edit</i>
+        <input type="hidden" name="status" value="incomplete">
+        <input type="text" name="name" placeholder="Add a new todo"><br />
+        <button class="btn waves-effect waves-light green lighten-2" type="submit" name="action">Add
+            <i class="material-icons right">playlist_add</i>
+        </button>
+    </form>
+
+    <div id="todos"></div>
+</div>
+
+</body>
+</html>
